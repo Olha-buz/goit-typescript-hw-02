@@ -1,6 +1,18 @@
 /*
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
+type Data = {
+  createAt: Data,
+  updateAt: Data,
+}
+
+type Page = {
+  title: string,
+  likes: number,
+  acounts: string[],
+  status: "open" | "close",
+  details?: Data,
+}
 
 const page1 = {
   title: 'The awesome page',
